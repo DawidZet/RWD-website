@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*mobile first*/
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #f2f2f2;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0 1em;
+    margin-top: 0.5em;
+}
+
+nav li {
+    margin: 0.5em;
+}
+
+nav a {
+    color: #595959;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+nav a:hover, a:focus {
+    color: #999999;
+}
+
+.blog-nav-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-nav-h1 {
+    margin-bottom: 0;
+    color: #0000cc;
+}
+
+.blog-nav-p {
+    margin-top: 0;
+    color: #1f7a7a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.col-1, .col-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;  
+}
+
+.main-article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding: 0.5em;
+}
+
+.secondary-article {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5em 1em 0.5em;
+    padding: 0.5em;
+}
+
+.main-title  {
+    color: #0000cc;
+    margin-top: 0;   
+}
+
+.secondary-title {
+    color: #0000cc;
+    margin-bottom: 0;
+}
+
+.secondary-text-box {
+    padding-bottom: 1em;
+    border-bottom: 1px solid;
+}
+
+.main-img-div, .secondary-img-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-article img, .secondary-article img {
+    max-width: 100%;
+    max-height: 7.5rem;
+}
+
+.main-date, .secondary-date {
+    color: #8c8c8c;
+    margin-bottom: 0;
+}
+
+.main-article-text, .secondary-article-text {
+    color: black;
+}
+
+.main-article-text {
+    padding-bottom: 1em;
+    border-bottom: 1px solid;
+}
+
+.main-read-more, .secondary-read-more {
+    color: #00b8e6;
+    font-weight: bold;
+}
+
+.main-read-more:hover, 
+.main-read-more:focus, 
+.secondary-read-more:hover,
+.secondary-read-more:focus {
+    color: #66e0ff;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.about-me img {
+    width: 100%;
+}
+
+.about-me-title {
+    color: #0000cc;
+    margin-top: -0.5em;
+    margin-bottom: 0.75em;
+}
+
+.about-me-text {
+    margin-bottom: 0.75em;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid;
+}
+
+.recent-post-box {
+    margin-top: 0.75em;
+}
+
+.recent-posts {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    margin-top: -1em;
+}
+
+.recent-posts img {
+    max-width: 100%;
+    max-height: 7.5rem;
+    display: flex;  
+}
+
+.recent-posts-title {
+    color: #0000cc;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.recent-posts p {
+    color: #000080;
+    font-weight: bold;
+}
+
+.recent-posts p a:hover, a:focus {
+    color: #b3b3ff;
+}
+
+.recent-posts-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+footer {
+    background-color: #4d4d4d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+}
+
+footer p {
+    align-content: center;
+    justify-content: center;
+    margin: 1em auto;
+}
+
+footer p:first-child {
+    margin-bottom: 0.5em;
+}
+
+footer p:last-child {
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0 1em;
+    }
+
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    nav a:hover, a:focus {
+        color: #999999;
+    }
+
+
+    .blog-nav-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .blog-nav-h1 {
+        margin-bottom: 0;
+        padding: 0 0.25em;
+        color: #0000cc;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .blog-nav-p {
+        margin-top: 0;
+        color: #1f7a7a;
+    }
+
+    .container {
+        flex-direction: row;
+        font-size: 1.25rem;
+        padding: 0.5em;
+    }
+
+    .col-2 {
+        max-width: 200px;
+        margin: 0 1em 0 0;
+    }
+
+    .main-article {
+        margin-bottom: 1em;
+        border-bottom: 1px solid;
+    }
+
+    .main-article img {
+        max-width: 100%;
+        max-height: 8rem;
+    }
+
+    .main-title {
+        order: 3;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+
+    .main-img-div {
+        order: 1;
+    }
+
+    .main-date {
+        order: 2;
+        margin-bottom: 0.5rem;
+    }
+
+    .main-article-text {
+        order: 4;
+        border-bottom: none;
+    }
+
+    .secondary-article {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-bottom: 1px solid;
+    }
+
+    .secondary-article:last-child {
+        border-bottom: 0;
+    }
+
+    .secondary-img-div {
+        order: 1;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5em;
+    }
+
+    .secondary-date {
+        order: 3;
+        width: 33%;
+    }
+
+    .secondary-text-box {
+        order: 2;
+        width: 67%;
+        border-bottom: none;
+    }
+
+    .secondary-title {
+        margin-top: 0;
+    }
+
+    .about-me {
+        border: 10px solid #e6e6e6;
+        margin-bottom: 1em;
+    }
+
+    .about-me-title {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .about-me-text {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .recent-posts {
+        border: 10px solid #e6e6e6;
+    }
+
+    .recent-posts-title {
+        margin-top: 0.5em;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (min-width: 1080px) {
+    .col-2 {
+        max-width: 300px;
+    }
+}

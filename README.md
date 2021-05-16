@@ -1,0 +1,1 @@
+Simple RWD website code.
